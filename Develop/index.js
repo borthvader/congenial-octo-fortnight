@@ -46,16 +46,21 @@ const questions = () => {
         name: 'install',
         message: 'Instructions for the installation of this project'
     }, {
-        
+        type: 'input',
+        name: 'usage',
+        message: 'Give some instructions for usage of this project'
+    },{
+        type: 'input',
+        name: 'contribution',
+        message: 'What are the contribution guidlines/instructions for this project?'
+    }, {
+        type: 'input',
+        name: 'test',
+        message: 'How can someone test your project?'
     }
 
-    ])};
+    ])
+    .then(input => {return input;
+    })
+};
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
